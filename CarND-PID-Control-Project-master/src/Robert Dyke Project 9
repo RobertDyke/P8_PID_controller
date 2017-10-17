@@ -1,0 +1,10 @@
+Project 9: PID controller.
+
+   I followed the examples in the lecture to build the PID controller. It works a good deal better than my model from term 1. I've tuned it tight enough to drive 60 mph (Morally I had to get it better than 55mph.) Thru trial and error and several conversations with other student I settled on P = -0.1, D = -3.2, and I = -0.00009. The car stays on the road only drifting into the warning lines on the tight curve after the dirt driveway.
+   I then built a twiddle algorithm. Dr Thun's description of PID inducing nausea is quite believeable. The car makes a sinasoidal motion on some of the straight sections of road. I can see how twiddle works, but I have bugs in my implementation. Another day sould fix it, but I am out of time. 
+   On the plus side, one of my bug fixes produced a twiddle powered "Super Vomit Car". It took up the whole lane with its sine wave travels. This could be used to interrogate prisoners or pump the stomachs of people who have been poisoned. 
+   When time permits, I want to finish getting the twiddle algorithm right. Any suggestions would be appretiated.
+
+Thanks,
+
+Bob Dyke
