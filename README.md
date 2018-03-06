@@ -1,5 +1,23 @@
 # PID_controller
-PID without twiddle 
+# Proportional Differential Integral(PID) 
+
+PID without twiddle. Twiddle is the coolest thing about this project. I plan to fix this at a later date. Any suggestions are appreciated.
+(Twiddle is an algorithm that helps PID get to the desired trajectory much quicker.)
+
+This project uses the same simulator as in the Behavioral Cloning Project. I ran the simulator in Windows 8.1 and built and ran the code in a VM running Ubuntu 16.04. This appears to be the main environmental solution that works. Windows has too many problems to run uWS under. If you have a solution for Windows 8.1 I'd be curious to hear it.
+
+Hints for setting this up. In VM VirtualBox Manager go to your VM->settings->network->advanced->Port Forwarding->Port Forwarding Rules. Enter a rule (Rule 1 in my case) with the host port and guest port set to 4567.
+
+Most of main.cpp is for connecting to the simulator. All of the h.onMessage commands make the connection. You probably want to leave them alone.
+
+PID.cpp sets the variables for the PID controller.
+
+Twiddle.cpp implements the twiddle algorithm (currently not working.)
+
+
+
+
+
 
 
 # Udacity Original README below:
